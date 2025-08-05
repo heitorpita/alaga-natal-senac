@@ -1,12 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alaga Natal - Login</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Desocupação de áreas de risco; Criação de reservas florestais nas margens dos rios; Diminuição dos índices de poluição e geração de lixo; Planejamento urbano mais consistente."
+    />
+    <meta name="author" content="Alunos Tecnico em Informática par Internet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="login.css">
-</head>
-<body>
-    <img src="../../assets/img/logo.png" alt="Logo da empresa">
-</body>
+    <link rel="icon" type="image/png" sizes="16x16"  href="../../assets/img/logo.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <title>Alaga Natal - Login</title>
+  </head>
+  <body>
+    <header>
+    <!-- Inicio do cabeçalho -->
+      <div class="container">
+        <img
+          class="logo"
+          src="../../assets/img/logo.png"
+          alt="logotipo composto por uma letra 'A' maiúscula estilizada na cor preta, com uma forma ondulada azul atravessando o centro da letra."
+        />
+        <h1>Alaga Natal</h1>
+      </div>
+      <!-- Fim do cabeçalho -->
+    </header>
+    <main>
+        <!-- Inicio card de login -->
+        <div class="card-login">
+            <form action="">
+                <label for="email"><i class="bi bi-envelope"></i>E-mail:</label>
+                <input type="email" name="email" id="email">
+                <label for="password"><i class="bi bi-shield-lock"></i>Senha:</label>
+                <input type="password" name="password" id="password">
+                <button type="submit" class="login-button">Login</button>
+            </form>
+        </div>
+        <div class="reset-password">
+            <a href="../cadastro/cadastro.html">Não tem uma conta? Clique aqui</a>
+        </div>
+        <!-- Fim card login -->
+    </main>
+    <!-- Inicio footer -->
+    <footer>
+        <p>©️Todos os direitos reservados</p>
+    </footer>
+    <!-- Fim do footer -->
+
+    <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  </body>
 </html>
