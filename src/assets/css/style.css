@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #4b00a1; /* Roxo de fundo */
+  background-color: #4b00a1;
   color: #fff;
   min-height: 100vh;
   display: flex;
@@ -21,6 +21,8 @@ header nav {
   align-items: center;
   justify-content: space-between;
   padding: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 header img {
@@ -57,7 +59,8 @@ header h1 {
   background-color: #2979ff;
   border-radius: 25px;
   padding: 5px 10px;
-  width: 90%;
+  width: 100%;
+  max-width: 800px;
 }
 
 .form-search i {
@@ -92,6 +95,7 @@ h2 {
   padding: 10px 20px;
   font-size: 1rem;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .popular-search {
@@ -121,16 +125,16 @@ h2 {
   margin: 20px auto;
   border-radius: 15px;
   overflow: hidden;
-  width: 90%;
+  width: 100%;
+  max-width: 700px;
   text-align: center;
 }
 
 .post img {
   width: 90%;
   display: block;
-  margin-left: 1.1rem;
-  margin-top: 1.1rem;
-  margin-bottom: 1.1rem;
+  margin: 1.1rem auto;
+  border-radius: 10px;
 }
 
 .post span {
@@ -175,11 +179,41 @@ footer {
 
 /* ===== Responsividade ===== */
 @media (min-width: 768px) {
+  h2 {
+    font-size: 1.2rem;
+  }
+  
   .popular-search {
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
   }
+
+  .popular-search div {
+    max-width: none;
+    padding: 15px 25px;
+  }
+
+  .popular-search h1 {
+    font-size: 1rem;
+  }
+
   .post {
-    max-width: 500px;
+    max-width: 900px;
+  }
+
+  .post p {
+    font-size: 1rem;
+  }
+
+  .form-search form {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header nav, main {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
