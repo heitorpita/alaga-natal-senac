@@ -5,13 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Desocupação de áreas de risco; Criação de reservas florestais nas margens dos rios; Diminuição dos índices de poluição e geração de lixo; Planejamento urbano mais consistente.">
   <meta name="author" content="Alunos Tecnico em Informática par Internet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/src/assets/css/style.css">
   <title>Alaga Natal</title>
 </head>
 <body>
   <header>
-    <div class="container">
-      
+
+    <div>
+      <nav>
+        <img src="/src/assets/img/logo.png" alt="logo">
+        <h1>alaga natal</h1>
+        <a href="/src/page/login/login.html"><button class="login-buttonn">LOGIN</button></a>
+      </nav>
     </div>
   </header>
+
+  <main>
+
+    <div class="form-search">
+      <form action="">
+        <i class="bi bi-search"></i>
+        <input type="text" name="buscar" id="buscar" placeholder="Digite o bairro ou rua">
+        <button><i class="bi bi-filter-right"></i></button>
+      </form>
+    </div>
+
+    <h2>buscas populares</h2>
+
+    <div class="popular-search">
+      <div><h1>Causas Comuns de alagamentos urbanos</h1></div>
+      <div><h1>Impactos dos Alagamentos na Saúde Pública</h1></div>
+      <div><h1>Medidas Preventivas Contra Alagamentos</h1></div>
+    </div>
+
+    <div class="post">
+      <img src="/src/assets/img/alagamento.png" alt="alagamento">
+      <span>Impactos dos Alagamentos na Saúde Pública</span> 
+      <span>Medidas Preventivas Contra Alagamentos</span>
+      <p>Chuva causa alagamentos em ruas e avenidas de Natal</p>
+    </div>
+
+    <button><a href="./src/page/postagem/postagem.html">saiba mais</a></button>
+
+  </main>
+
+  <footer>
+        <p>©️Todos os direitos reservados</p>
+  </footer>
+
+     <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
 </body>
 </html>

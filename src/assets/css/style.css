@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fredoka One', Arial, sans-serif;
+}
+
+body {
+  background-color: #4b00a1;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Cabeçalho ===== */
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header img {
+  width: 40px;
+  height: 40px;
+}
+
+header h1 {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.login-buttonn {
+  background-color: #fff;
+  color: #4b00a1;
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+/* ===== Barra de Busca ===== */
+.form-search {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+.form-search form {
+  display: flex;
+  align-items: center;
+  background-color: #2979ff;
+  border-radius: 25px;
+  padding: 5px 10px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.form-search i {
+  color: white;
+  font-size: 1.2rem;
+  margin-right: 8px;
+}
+
+.form-search input {
+  border: none;
+  outline: none;
+  background: transparent;
+  flex: 1;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.form-search input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.form-search button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+/* ===== Buscas Populares ===== */
+h2 {
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.popular-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+}
+
+.popular-search div {
+  background-color: #2979ff;
+  border-radius: 20px;
+  padding: 10px 15px;
+  text-align: center;
+  max-width: 300px;
+}
+
+.popular-search h1 {
+  font-size: 0.85rem;
+  font-weight: normal;
+}
+
+/* ===== Postagem ===== */
+.post {
+  background-color: #2979ff;
+  margin: 20px auto;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+}
+
+.post img {
+  width: 90%;
+  display: block;
+  margin: 1.1rem auto;
+  border-radius: 10px;
+}
+
+.post span {
+  display: inline-block;
+  background-color: #1D4278;
+  border-radius: 15px;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  margin: 5px 3px;
+}
+
+.post p {
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+/* ===== Botão Saiba Mais ===== */
+main > button {
+  display: block;
+  margin: 0 auto 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #fff;
+  color: #4b00a1;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+main > button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===== Rodapé ===== */
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 0.8rem;
+  background-color: #3a0077;
+}
+
+/* ===== Responsividade ===== */
+@media (min-width: 768px) {
+  h2 {
+    font-size: 1.2rem;
+  }
+  
+  .popular-search {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .popular-search div {
+    max-width: none;
+    padding: 15px 25px;
+  }
+
+  .popular-search h1 {
+    font-size: 1rem;
+  }
+
+  .post {
+    max-width: 900px;
+  }
+
+  .post p {
+    font-size: 1rem;
+  }
+
+  .form-search form {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header nav, main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
